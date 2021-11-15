@@ -48,6 +48,10 @@ if difficulty_level == "easy":
         elif easy_function_output == 0:
             print("You lost the game")
             easy_flag = False
+        elif user_guess < random_number and easy_function_output > 0:
+            print("Sorry the number is low")
+        elif user_guess > random_number and easy_function_output > 0:
+            print("Sorry the number is high")
 
 
 elif difficulty_level == "hard":
@@ -60,6 +64,10 @@ elif difficulty_level == "hard":
         elif hard_function_output == 0:
             print("you lost the game")
             hard_flag = False
+        elif user_guess < random_number and hard_function_output > 0:
+            print("sorry the number is low")
+        elif user_guess > random_number and hard_function_output > 0:
+            print("sorry the number is high")
 
 
 
